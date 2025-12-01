@@ -71,9 +71,9 @@ Total books alive in library: 3
 
 ---
 
-# Класове
+## Класове
 
-## #Author
+### Author
 Представя автор на книга.
 - **Членове:**  
   - `name` – името на автора  
@@ -86,7 +86,7 @@ Total books alive in library: 3
   - `void setBirthYear(int)` – задава година на раждане с валидация  
   - `std::string to_string() const` – връща информация за автора като низ  
 
-## #Book
+### Book
 Представя книга.
 - **Членове:**  
   - `title` – заглавие  
@@ -115,7 +115,7 @@ Total books alive in library: 3
   - `std::string to_string() const` – връща информация за книгата като низ  
   - `static int getTotalBooks()` – връща броя на живите книги  
 
-## #Member
+### Member
 Представя читател на библиотеката.
 - **Членове:**  
   - `name` – име  
@@ -129,7 +129,7 @@ Total books alive in library: 3
   - `int getYearJoined() const` – връща годината на присъединяване  
   - `std::string to_string() const` – връща информация за члена като низ  
 
-## #Loan
+### Loan
 Представя заем на книга.
 - **Членове:**  
   - `isbn` – ISBN на заетата книга  
@@ -148,7 +148,7 @@ Total books alive in library: 3
   - `bool isOverdue(const std::string& today) const` – проверява дали е просрочен  
   - `std::string to_string() const` – връща информация за заема като низ  
 
-## #Library
+### Library
 Представя цялата библиотека.
 - **Членове:**  
   - `books` – всички книги (`std::vector<Book>`)  
